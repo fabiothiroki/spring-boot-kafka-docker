@@ -17,7 +17,7 @@ public class KafkaController {
 
     @RequestMapping("/publish")
     public String sendMessageToKafkaTopic(@RequestParam("message") final String message){
-        this.producer.sendMessage(message);
+//        this.producer.sendMessage(message);
         return "Hello World!";
     }
 
