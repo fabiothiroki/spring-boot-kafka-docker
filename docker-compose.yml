@@ -1,14 +1,14 @@
-version: '2'
+version: '3'
 services:
-  zookeeper:
-    image: wurstmeister/zookeeper
-    ports:
-      - "2181:2181"
   kafka:
-    image: wurstmeister/kafka
+    image: landoop/fast-data-dev
     ports:
       - "9092:9092"
+      - "8081:8081"
+      - "8082:8082"
+      - "8083:8083"
+      - "2181:2181"
+      - "3030:3030"
+      - "9581-9585:9581-9585"
     environment:
-      KAFKA_ADVERTISED_HOST_NAME: localhost
-      KAFKA_CREATE_TOPICS: "test:1:1"
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      - ADV_HOST=192.168.99.100
