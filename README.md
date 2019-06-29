@@ -2,9 +2,9 @@
 Sample application on how to setup a spring boot with kafka for local development.
 
 # Run
-1. On Mac OS you need to start `docker-machine`:
+1. On Mac OS/Windows you need to start a previously created `docker-machine`:
 ```
-docker-machine start default
+docker-machine start <machine-name>
 ```
 
 2. Start kafka:
