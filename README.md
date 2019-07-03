@@ -12,8 +12,18 @@ docker-machine start <machine-name>
 docker-compose up
 ```
 
+3. Edit [docker-compose.yml](docker-compose.yml) file to set your Kafka IP exposed through Docker:
+```
+- ADV_HOST=192.168.99.100
+```
 
-3. Start Spring Boot application:
+4. Edit [application.properties](src/main/resources/application.properties) file to set your Kafka IP exposed through Docker:
+```
+spring.kafka.bootstrap-servers=192.168.99.100:9092
+```
+
+
+5. Start Spring Boot application:
 ```
 ./mvnw spring-boot:run
 ```

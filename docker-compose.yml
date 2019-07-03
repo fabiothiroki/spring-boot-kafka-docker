@@ -1,7 +1,7 @@
 version: '3'
 services:
   kafka:
-    image: landoop/fast-data-dev
+    image: landoop/fast-data-dev:latest
     ports:
       - "9092:9092"
       - "8081:8081"
