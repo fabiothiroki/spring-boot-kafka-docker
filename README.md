@@ -2,9 +2,10 @@
 Sample application on how to setup a spring boot with kafka for local development.
 
 # Run
-1. On Mac OS/Windows you need to start a previously created `docker-machine`:
+1. On Mac OS/Windows you may need to start a previously created `docker-machine`:
 ```
 docker-machine start <machine-name>
+eval $(docker-machine env)
 ```
 
 2. Start kafka:
@@ -27,3 +28,6 @@ spring.kafka.bootstrap-servers=192.168.99.100:9092
 ```
 ./mvnw spring-boot:run
 ```
+
+# Publish a message
+To publish a message, access the endpoint `http://localhost:8080/publish` passing a `message` query parameter with your content. Example: `http://localhost:8080/publish?message=sample_message`
