@@ -1,5 +1,6 @@
 # Spring Boot Kafka Docker
-Sample application on how to setup a spring boot with kafka for local development.
+
+A demo application of tutorial: [Setup Kafka for development](https://dev.to/fabiothiroki/setup-kafka-for-development-44cd) using Spring Boot and Spring Kafka.
 
 # Run
 1. On Mac OS/Windows you may need to start a previously created `docker-machine`:
